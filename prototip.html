@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.cdnfonts.com/css/simple-home" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/love-light" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="deneme,Prototip" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- Site title logosu -->
+    <link rel="icon" href="img/title.png" type="image/x-icon" />
+    <title>Prototip | Deneme 3 </title>
+    <!-- CSS Kodları -->
+     <style>
+        .image{
+      justify-content: center;
+      align-items: center;
+      background-image: url('img/wallpaper.jpg'); /* resmin yolunu düzeltin */
+      width: 100vw; /* Ekran genişliği kadar */
+      height: 100vh; /* Ekran yüksekliği kadar */
+      background-repeat: no-repeat;
+      background-position: right;
+      overflow: hidden;
+      background-size: cover;
+      -webkit-background-clip: text; /* Bu özellik sorunsuz çalışır */
+      background-attachment: fixed;
+      color: rgba(255,9,9,0); /* Metin rengini belirleyin */
+       }
+               .image2{
+      justify-content: center;
+      align-items: center;
+      background-image: url('img/wallpaper2.jpg'); /* resmin yolunu düzeltin */
+      width: 100vw; /* Ekran genişliği kadar */
+      height: 100vh; /* Ekran yüksekliği kadar */
+      background-repeat: no-repeat;
+      background-position: right;
+      overflow: hidden;
+      background-size: cover;
+      -webkit-background-clip: text; /* Bu özellik sorunsuz çalışır */
+      background-attachment: fixed;
+      color: rgba(255,9,9,0); /* Metin rengini belirleyin */
+       }
+               .image3{
+      justify-content: center;
+      align-items: center;
+      background-image: url('img/wallpaper3.jpg'); /* resmin yolunu düzeltin */
+      width: 100vw; /* Ekran genişliği kadar */
+      height: 100vh; /* Ekran yüksekliği kadar */
+      background-repeat: no-repeat;
+      background-position: right;
+      overflow: hidden;
+      background-size: cover;
+      -webkit-background-clip: text; /* Bu özellik sorunsuz çalışır */
+      background-attachment: fixed;
+      color: rgba(255,9,9,0); /* Metin rengini belirleyin */
+       }
+               .image4{
+      justify-content: center;
+      align-items: center;
+      background-image: url('img/wallpaper4.jpg'); /* resmin yolunu düzeltin */
+      width: 100vw; /* Ekran genişliği kadar */
+      height: 100vh; /* Ekran yüksekliği kadar */
+      background-repeat: no-repeat;
+      background-position: right;
+      overflow: hidden;
+      background-size: cover;
+      -webkit-background-clip: text; /* Bu özellik sorunsuz çalışır */
+      background-attachment: fixed;
+      color: rgba(255,9,9,0); /* Metin rengini belirleyin */
+       }
+        body {
+          @import url('https://fonts.cdnfonts.com/css/simple-home');
+          @import url('https://fonts.cdnfonts.com/css/love-light');
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: url('img/gif.gif');
+          background-color: black;
+        }
+
+        .post {
+          max-width: 90%;
+          background-color: whitesmoke;
+          margin: 20px auto;
+          border: 1px solid black;
+          padding: 15px;
+          border-radius: 30px;
+          opacity:0.9;
+        }
+
+        .post-header {
+          text-align: center;
+          font-size: 50px;
+          margin-bottom: 10px;
+          color:white;
+          /*font-family: 'Simple Home', sans-serif;*/
+          font-family: 'Love Light', sans-serif;
+        }
+
+        .post img {
+          width: 100%;
+          height: auto;
+        }
+
+        .actions {
+          margin-top: 10px;
+          margin-left: 20px;
+          text-align: left;
+        }
+
+        .actions button {
+          padding: 0;
+          margin-right: 10px;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+        }
+
+        .actions button img {
+          width: 30px;
+          height: 30px;
+        }
+
+        @media (min-width: 768px) {
+          .post {
+            max-width: 600px;
+          }
+        }
+
+    </style>
+
+</head>
+<body>
+  <audio id="audio" src="music/music.mp3" autoplay></audio>
+    <div class="post-header">Seni   Çok    Seviyorum  </div>
+    <!-- 1.RESİM-->
+  <div class="post" >
+    <img src="img/wallpaper.jpg" alt="Like" id="likeImage" style="border-radius: 30px;">
+    <div class="actions">
+      <button class="like-btn" onclick="begeniBas()"><img src="img/begen.png" alt="Like"></button>
+      <button class="comment-btn"> <img src="img/yorum.png" alt="Yorum Yap"></button>
+      <button class="share-btn" onclick="gonderBas()"><img src="img/gonder.png" alt="Paylaş"></button>
+      <button class="save-btn" onclick="kaydetBas()" style=" margin-left: 380px;"><img src="img/kaydet.png" alt="Kaydet"></button>
+    </div>
+  </div>
+   <div class="image">
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+
+</div>
+
+<!-- 2.RESİM-->
+  <div class="post">
+    <img src="img/wallpaper2.jpg" alt="Like" id="likeImage" class="image" style="border-radius: 30px;">
+    <div class="actions">
+      <button class="like-btn" onclick="begeniBas()"><img src="img/begen.png" alt="Like"></button>
+      <button class="comment-btn"> <img src="img/yorum.png" alt="Yorum Yap"></button>
+      <button class="share-btn" onclick="gonderBas()"><img src="img/gonder.png" alt="Paylaş"></button>
+      <button class="save-btn" onclick="kaydetBas()" style=" margin-left: 380px;"><img src="img/kaydet.png" alt="Kaydet"></button>
+    </div>
+  </div>
+   <div class="image2">
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+
+</div>
+
+  <!-- 3.RESİM-->
+  <div class="post">
+    <img src="img/wallpaper3.jpg" alt="Like" id="likeImage" style="border-radius: 30px;">
+    <div class="actions">
+      <button class="like-btn" onclick="begeniBas()"><img src="img/begen.png" alt="Like"></button>
+      <button class="comment-btn"> <img src="img/yorum.png" alt="Yorum Yap"></button>
+      <button class="share-btn" onclick="gonderBas()"><img src="img/gonder.png" alt="Paylaş"></button>
+      <button class="save-btn" onclick="kaydetBas()" style=" margin-left: 380px;"><img src="img/kaydet.png" alt="Kaydet"></button>
+    </div>
+  </div>
+  <div class="image3">
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+
+</div>
+  <!-- 4.RESİM-->
+  <div class="post">
+    <img src="img/wallpaper4.jpg" alt="Like" id="likeImage" style="border-radius: 30px;">
+    <div class="actions">
+      <button class="like-btn" onclick="begeniBas()"><img src="img/begen.png" alt="Like"></button>
+      <button class="comment-btn"> <img src="img/yorum.png" alt="Yorum Yap"></button>
+      <button class="share-btn" onclick="gonderBas()"><img src="img/gonder.png" alt="Paylaş"></button>
+      <button class="save-btn" onclick="kaydetBas()" style=" margin-left: 380px;"><img src="img/kaydet.png" alt="Kaydet"></button>
+    </div>
+  </div>
+   <div class="image4">
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum Seni Seviyorum 
+
+</div>
+
+
+<script>
+  // Tarayıcı otomatik çalmayı destekliyorsa, çal
+  var audio = document.getElementById("audio");
+  audio.play().catch(error => {
+    // Otomatik çalma desteklenmiyorsa, kullanıcı etkileşimini bekleyin
+    document.addEventListener("click", function enableAudio() {
+      audio.play();
+      document.removeEventListener("click", enableAudio); // Bir kere çalıştır
+    });
+  });
+
+  function begeniBas() {
+    var likeButton = document.querySelector(".like-btn");
+    var likeImage = likeButton.querySelector("img");
+    likeImage.src = "img/begen2.png";
+  }
+  function kaydetBas() {
+    var likeButton = document.querySelector(".save-btn");
+    var likeImage = likeButton.querySelector("img");
+    likeImage.src = "img/kaydet2.png";
+  }
+  function gonderBas() {
+    var likeButton = document.querySelector(".share-btn");
+    var likeImage = likeButton.querySelector("img");
+    likeImage.src = "img/gonder2.png";
+  }
+  //eğer isterseniz burada yorum resmini basılınca açabilirsiniz.
+  /*function yorumBas() {
+    var likeButton = document.querySelector(".comment-btn");
+    var likeImage = likeButton.querySelector("img");
+    likeImage.src = "img/yorum2.png";
+  }*/
+
+
+</script>
+
+</body>
+</html>
+
+
